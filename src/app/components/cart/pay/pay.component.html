@@ -1,0 +1,27 @@
+
+<h2>Thông tin khách hàng</h2>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="ten">Họ và tên: </label>
+      <input type="text" class="form-control" id="ten" placeholder="VD: Nguyễn Văn A" required [(ngModel)]="pay.ten" [ngModelOptions]="{standalone: true}" name="ten">
+    </div>
+    <div class="form-group">
+      <label for="email">Địa chỉ Email: </label>
+      <input type="text" class="form-control" id="email" placeholder="VD: abcxyz@gmail.com" required [(ngModel)]="pay.email" [ngModelOptions]="{standalone: true}" name="email">
+    </div>
+    <div class="form-group">
+      <label for="mota">Số điện thoại:</label>
+      <input type="text" class="form-control" id="sdt" placeholder="VD: 0123456789" required [(ngModel)]="pay.sdt" [ngModelOptions]="{standalone: true}" name="sdt">
+    </div>
+    <div class="form-group">
+      <label for="chitiet">Địa chỉ: </label>
+      <input type="text" class="form-control" id="diachi" placeholder="VD: 121 Kim Ngưu tp Hà Nội" required [(ngModel)]="pay.diachi" [ngModelOptions]="{standalone: true}" name="diachi">
+    </div>
+
+    <h4>Tổng thanh toán: {{tongTien}} $</h4>
+    <button type="submit" class="btn btn-success">Gửi thông tin</button>
+    <a class="alert alert-success col-lg-6 float-right" style="text-align: center;" role="alert" *ngIf="submitted">
+            Xác nhận thành công</a>
+  </form>
+</div>

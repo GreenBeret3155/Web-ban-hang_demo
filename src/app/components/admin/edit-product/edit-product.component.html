@@ -1,0 +1,39 @@
+<h3>Sửa sản phẩm</h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="tensp">Tên sản phẩm</label>
+      <input type="text" class="form-control" id="tensp" required [(ngModel)]="product.tensp" [ngModelOptions]="{standalone: true}" name="tensp">
+    </div>
+    <div class="form-group">
+      <label for="anh">Url ảnh sản phẩm</label>
+      <input type="text" class="form-control" id="anh" required [(ngModel)]="product.anh" [ngModelOptions]="{standalone: true}" name="anh">
+    </div>
+    <div class="form-group">
+      <label for="mota">Mô tả ngắn</label>
+      <input type="text" class="form-control" id="mota" required [(ngModel)]="product.mota" [ngModelOptions]="{standalone: true}" name="mota">
+    </div>
+    <div class="form-group">
+      <label for="chitiet">Chi tiết</label>
+      <input type="text" class="form-control" id="chitiet" required [(ngModel)]="product.chitiet" [ngModelOptions]="{standalone: true}" name="chitiet">
+    </div>
+    <div class="form-group">
+      <label for="loai">Loại sản phẩm</label>
+      <select class="form-control" id="loai" required [(ngModel)]="product.loai" [ngModelOptions]="{standalone: true}" name="loai">
+        <option value="iphone">Iphone</option>
+        <option value="ipad">Ipad</option>
+        <option value="macbook">Macbook</option>
+        <option value="iwatch">Iwatch</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="gia">Giá bán: $</label>
+      <input type="text" class="form-control" id="gia" required [(ngModel)]="product.gia" [ngModelOptions]="{standalone: true}" name="gia">
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
+<hr>
+<a [routerLink]="['/admin']">Trở về trang sản phẩm</a>
+ 

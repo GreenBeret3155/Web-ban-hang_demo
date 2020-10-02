@@ -1,0 +1,36 @@
+<h2>Chi tiết sản phẩm mã số {{product.id}}</h2> 
+
+<hr/>
+<div *ngIf="product">
+  <div>
+    <label><b>Tên sản phẩm: </b></label> {{product.tensp}}
+  </div>
+
+  <div>
+    <label><b>Hình ảnh:  </b></label> <img src="{{product.anh}}" alt="{{product.tensp}}" width="500">
+  </div>
+
+  <div>
+    <label><b>Mô tả ngắn </b></label> {{product.mota}}
+  </div>
+
+  <div>
+    <label><b>Chỉ tiết </b></label> {{product.chitiet}}
+  </div>
+
+  <div>
+    <label><b>Loại sản phẩm </b></label> {{product.loai}}
+  </div>
+
+  <div>
+    <label><b>Giá bán</b></label> {{product.gia}} $
+  </div>  
+</div>
+
+<br>
+<br>
+<hr>
+<a [routerLink]="['/admin']">Trở về trang sản phẩm</a>
+
+
+

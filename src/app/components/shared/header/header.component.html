@@ -1,0 +1,46 @@
+
+<div class="mb-1 navbar sticky-top navbar-expand-lg navbar-dark default-color">
+  <a class="navbar-brand" [routerLink]="['']"><img src="assets/anh/hoa.jpg" alt="Về trang chủ" class="rounded-circle" width="50"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+    aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link " [routerLink]="['/contact']">Contact</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" [routerLink]="['/about']">About</a>
+      </li>
+      <li class="nav-item active"> 
+        <a class="nav-link" [routerLink]="['/cart']"><i class="fas fa-shopping-cart"></i> Giỏ hàng</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+      <li class="nav-item">
+        <a class="nav-link waves-effect waves-light">
+          <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" required 
+          [(ngModel)]="ketqua" [ngModelOptions]="{standalone: true}">
+          <button class="btn btn-success my-2 my-sm-0" type="submit"[routerLink]="['/listproduct/search',ketqua]" >Search</button>
+        </form>
+        </a>
+      </li>  
+    </ul>
+  </div>
+</div>
+
+<div class="jumbotron ">
+  <div class="container">
+    <h1 class="display-4">Cửa hàng APPLE</h1>
+    <p class="lead">Mang đến sản phẩm thông minh cho khách hàng </p>
+  </div>
+</div>
+
+  

@@ -1,0 +1,53 @@
+
+<div class="bd-example">
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+       <a [routerLink]="['/listproduct/iphone']"><img src="https://stcv4.hnammobile.com/fileext/tren-tay-iphone-xs-max-vang-gold.jpg" class="d-block w-100" > </a>
+        <div class="carousel-caption d-none d-md-block">
+          <h3>iPhone</h3>
+          <p>Chiếc smartphone tuyệt vời</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <a [routerLink]="['/listproduct/ipad']"><img src="https://cdn.tgdd.vn/Products/Images/522/60816/Slider/apple-ipad-air-16gb-wifi-slider01.jpg" class="d-block w-100"> </a>
+        <div class="carousel-caption d-none d-md-block">
+          <h3>iPad</h3>
+          <p>Chiếc smartphone tuyệt vời</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+       <a [routerLink]="['/listproduct/macbook']"><img src="https://hoanghamobile.com/tin-tuc/wp-content/uploads/2018/11/mua-macbook-air-2018.jpg" class="d-block w-100"> </a>
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Macbook</h3>
+          <p>Laptop hoàn hảo cho mọi hoạt động.</p>
+        </div>
+      </div>
+    <div class="carousel-item">
+       <a [routerLink]="['/listproduct/iwatch']"><img src="https://hoanghamobile.com/Uploads/Originals/2019/09/11/201909111508572477_HHM-Khung-%E1%BA%A3nh-s%E1%BA%A3n-ph%E1%BA%A9m-11.png;width=720;height=500;watermark=logo;crop=auto;quality=80;format=jpg" class="d-block w-100"> </a>
+        <div class="carousel-caption d-none d-md-block">
+          <h3>iWatch</h3>
+          <p>Dồng hồ đeo tay kết nối với tất cả thiết bị.</p>
+        </div>
+      </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
+

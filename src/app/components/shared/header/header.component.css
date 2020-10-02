@@ -1,0 +1,9 @@
+.mb-1{
+	background-color: #393f61;
+}
+.jumbotron{
+	background-image: url(./../../../../assets/anh/og-default.jpg);
+	background-size: 800px;
+/*	background-repeat: no-repeat;*/
+	background-position: center;
+}

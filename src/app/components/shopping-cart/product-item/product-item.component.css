@@ -1,0 +1,12 @@
+.card-body{
+	display: relative;
+}
+.card-body{
+	position:  absolute;
+	bottom: 0px ;
+}
+.card{
+	margin-top: 30px;
+	margin-left: 70px; 
+	margin-bottom: 30px
+}

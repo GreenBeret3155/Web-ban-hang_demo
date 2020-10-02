@@ -1,0 +1,7 @@
+<h1>IPhone</h1>
+
+<div class="row">
+<ng-container *ngFor="let i of products |async">
+<app-product-item *ngIf="i.loai=== loaiiphone" [item]="i"></app-product-item>
+</ng-container>
+</div>

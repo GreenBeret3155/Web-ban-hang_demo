@@ -1,0 +1,32 @@
+<h1>Chi tiết sản phẩm {{product.tensp}}</h1>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="{{product.anh}}" width="700">
+    </div>
+    <div class="col-md-6" id= "detail">
+
+      <div>
+        <label><b>Tên sản phẩm: </b></label> {{product.tensp}}
+      </div>
+
+      <div>
+        <label><b>Mô tả ngắn: </b></label> {{product.mota}}
+      </div>
+
+      <div>
+        <label><b>Chi tiết: </b></label> {{product.chitiet}}
+      </div>
+
+      <div>
+        <label><b>Giá bán: </b></label> {{product.gia}} $
+      </div>
+
+      <hr>
+
+      <a class="btn btn-primary btn-lg" (click) ="onAddCart(item)" ><i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng </a>
+
+    </div>
+  </div>
+</div>
